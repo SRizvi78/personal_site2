@@ -8,6 +8,7 @@ export const ServicesContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: #010606;
+    
 
   @media only screen and (max-width: 768px) {
       height: 1100px;
@@ -42,8 +43,10 @@ export const ServicesWrapper = styled.div`
   }
 `;
 
-export const ServicesCard = styled.div`
+export const ServicesCard = styled.a`
   background: #fff;
+  text-decoration: none;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -87,6 +90,8 @@ export const ServicesH2 = styled.h2`
 `;
 
 export const ServicesP = styled.p`
+
+font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   text-align: center  
 `;

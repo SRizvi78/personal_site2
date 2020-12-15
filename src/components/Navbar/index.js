@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
 import {IconContext } from 'react-icons/lib';
 import  {animateScroll as scroll} from 'react-scroll';
@@ -33,7 +33,7 @@ const Navbar = (props) => {
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
                 <NavLogo to='/' onClick={toggleHome}>
-                    Dolla
+                    SRizvi
                 </NavLogo>
                 <MobileIcon onClick={props.toggle}>
                     <FaBars />
@@ -51,7 +51,7 @@ const Navbar = (props) => {
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='discover'
+                        <NavLinks to='project'
                         smooth={true}
                         duration={500}
                         spy={true}
@@ -59,36 +59,21 @@ const Navbar = (props) => {
                         offset={-80}
                         
                         >
-                            Discover
+                            Projects
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='services'
+                        <NavLinks to='contact'
                         smooth={true}
                         duration={500}
                         spy={true}
                         exact='true'
                         offset={-80}
                         >
-                            Services
-                        </NavLinks>
-                    </NavItem>
-                    <NavItem>
-                        <NavLinks to='signup'  
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        exact='true'
-                        offset={-80}>
-                            Sign Up
+                            Contact
                         </NavLinks>
                     </NavItem>
                 </NavMenu>
-                <NavBtn >
-                    <NavBtnLink to='/signin'>
-                    Sign In
-                    </NavBtnLink>  
-                </NavBtn>
             </NavbarContainer>
         </Nav>  
         </IconContext.Provider>

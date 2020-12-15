@@ -3,23 +3,23 @@ import {ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIc
 
 const Services = () => {
     return (
-        <ServicesContainer id='services'>
-            <ServicesH1>Our Services</ServicesH1>
+        <ServicesContainer id='contact'>
+            <ServicesH1>Contact Me</ServicesH1>
             <ServicesWrapper>
-                <ServicesCard>
-                    <ServicesIcon  src='images/svg-1.svg'/>
-                    <ServicesH2>Reduce expenses</ServicesH2>
-                    <ServicesP>We help reduce your fess and increase your overall revenue.</ServicesP>
+                <ServicesCard href='https://www.facebook.com/Syedintekhabrizvi/' target='_blank' title='Open Facebook'>
+                    <ServicesIcon  src='images/facebook.svg'/>
+                    <ServicesH2>Facebook</ServicesH2>
+                    <ServicesP>Checkout My Facebook ID Anything interesting Knock me</ServicesP>
                 </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon  src='images/svg-6.svg'/>
-                    <ServicesH2>Virtal Offices</ServicesH2>
-                    <ServicesP>You can Access our platform online anywhere in the world.</ServicesP>
+                <ServicesCard href='https://www.instagram.com/srizvi78/' target='_blank' title='Open Instagram'>
+                    <ServicesIcon  src='images/instagram.svg'/>
+                    <ServicesH2>Instagram</ServicesH2>
+                    <ServicesP>Checkout My Instagram ID</ServicesP>
                 </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon  src='images/svg-5.svg'/>
-                    <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock your special membership card that returns 5% cash back.</ServicesP>
+                <ServicesCard href='https://github.com/SRizvi78' target='_blank' title='Open Github'>
+                    <ServicesIcon  src='images/github.svg'/>
+                    <ServicesH2>Github</ServicesH2>
+                    <ServicesP>Checkout My Github Repositories. See my works.</ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>

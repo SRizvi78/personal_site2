@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements';
+import {HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, HeroPre} from './HeroElements';
 import { Button } from '../ButtonElement';
 
 const HeroSection = () => {
@@ -12,17 +12,17 @@ const HeroSection = () => {
     return (
         <HeroContainer id='home'>
             <HeroBg>
-                <VideoBg  src='images/back.jpg' type='image/png' />
+                <VideoBg  src='images/c.jpg' type='image/jpg' />
             </HeroBg>
             <HeroContent>
                 <HeroH1>
-                    Virtual Banking Made Easy
+                    Syed Intekhab<br/><HeroPre>  Mahdi Rizvi</HeroPre>
                 </HeroH1>
                 <HeroP>
-                    Sign up for a new accout today and receive $250 in credit towards your next payment. 
+                    Get your own website for yourself or your business, today. 
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover}
+                    <Button to='about' onMouseEnter={onHover} onMouseLeave={onHover}
                     primary='true'
                     dark='true'
                     smooth={true}
@@ -31,7 +31,7 @@ const HeroSection = () => {
                         exact='true'
                         offset={-80}
                     >
-                        Get started {hover ? <ArrowForward /> : <ArrowRight />}
+                        Learn More {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>

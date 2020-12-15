@@ -16,7 +16,8 @@ import  {InfoContainer, InfoWrapper, Column1, Column2, TopLine, Heading, Subtitl
      alt,
     primary,
 dark,
-dark2}) => {
+dark2,
+to}) => {
     return (
         <>
         <InfoContainer lightBg={lightBg} id={id}>
@@ -28,7 +29,7 @@ dark2}) => {
                         <Heading lightText={lightText}>{headline}</Heading>
                         <Subtitle darkText={darkText}>{description}</Subtitle>
                         <BtnWrap>
-                            <Button to='home'
+                            <Button to={to}
                             smooth={true}
                             duration={500}
                             spy={true}

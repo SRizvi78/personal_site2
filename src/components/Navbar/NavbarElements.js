@@ -21,6 +21,7 @@ z-index: 10;
 `
 
 export const NavbarContainer = styled.div`
+font-family: 'Raleway', sans-serif;
 display: flex;
 justify-content: space-between;
 height: 80px;
@@ -31,6 +32,7 @@ max-width: 1100px;
 `;
 
 export const NavLogo = styled(LinkR)`
+text-shadow: 1px 2px 10px black, 1px -2px 10px black;
 color: #fff;
 justify-self: flex-start;
 cursor: pointer;
@@ -71,10 +73,12 @@ margin-right: -22px;
 `;
 
 export const NavItem = styled.li`
+text-shadow: 1px 2px 10px black, 1px -2px 10px black;
 height: 80px;
 `;
 
 export const NavLinks = styled(LinkS)`
+font-family: 'Raleway', sans-serif;
 color: #fff;
 display: flex;
 align-items: center;
@@ -84,38 +88,14 @@ height: 100%;
 border: none;
 cursor: pointer;
 
+&:hover {
+    border-bottom: 3px solid #01bf71;
+}
+
 &.active {
     border-bottom: 3px solid #01bf71;
 }
 `;
 
-export const NavBtn = styled.nav`
-display: flex;
-align-items: center;
 
-@media screen and (max-width: 768px) {
-    display: none;
-}
-`;
-
-export const NavBtnLink = styled(LinkR)`
-border-radius: 50px;
-background: #01bf71;
-white-space: nowrap;
-padding: 10px 22px;
-color: #010606;
-font-size: 16px;
-outline: none;
-border: none;
-cursor: pointer;
-transition: all 0.2s ease-in-out;
-text-decoration: none;
-
-&:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
-
-}
-`;
 

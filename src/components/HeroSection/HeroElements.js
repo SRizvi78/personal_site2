@@ -3,6 +3,8 @@ import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
+  background: black;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,9 +60,10 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
   color: #fff;
-  font-size: 48px;
-  text-align: center;
-
+  font-size: 56px;
+  text-align: left;
+  font-family: 'Langar', cursive;
+  text-shadow: 1px 2px 10px black, 1px -2px 10px black;
   @media screen and (max-width: 768px) {
     font-size: 40px;
 
@@ -71,12 +74,18 @@ export const HeroH1 = styled.h1`
   }
 `;
 
+export const HeroPre = styled.pre`
+font-family: 'Langar', cursive;
+text-shadow: 1px 2px 10px black, 1px -2px 10px black;
+`;
+
 export const HeroP = styled.p`
  margin-top: 24px;
  color: #fff;
  font-size: 24px;
  text-align: center;
  max-width: 600px;
+ text-shadow: 1px 2px 10px black, 1px -2px 10px black;
 
  @media screen and (max-width: 768px) {
   font-size: 24px;

@@ -5,49 +5,31 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Premium Bank',
-    headline: 'Unlimited Transcaition with zero fees,',
-    description: 'Get access to your exclusive app that allows you to send unlimited transcations without getting charged any fees.',
-    buttonLabel: 'Get Started',
+    topLine: 'About Me',
+    headline: "Hello, this is Syed Intekhab Mahdi Rizvi,I'm a front-end web developer.",
+    description: "I have learned HTML, CSS and Java Script(Not totally, Im still learning). Beside that i have a pretty good knowledge about markdown, terminal, git, github, chormeDevtool. I like to learn new things.. Be sure to check out a few of my projects down below.",
+    buttonLabel: 'Learn more',
     imgStart: false,
-    img: 'images/svg-1.svg',
+    img: 'images/hero.svg',
     alt: 'car',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    to: 'project'
 };
 
 export const homeObjTwo = {
-    id: 'discover',
+    id: 'mail',
     lightBg: true,
     lightText: false,
     lightTextDesc: true,
-    topLine: 'Unlimited Access',
-    headline: 'Login to your account at any time',
-    description: 'We have you coverd no matter where you located, All you need is an internet connection and a phone or computer.',
-    buttonLabel: 'Learn More',
+    topLine: 'Mail',
+    headline: 'Send an email to know about our prices.',
+    description: 'Email Adress: srnowroz78@gmail.com ',
+    buttonLabel: 'Thanks for coming...',
     imgStart: true,
-    img: 'images/svg-2.svg',
-    alt: 'Piggy bank',
-    dark: false,
-    primary: false,
-    darkText: true
-};
-
-//light box
-
-export const homeObjThree = {
-    id: 'signup',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'Join Our Team',
-    headline: 'Creating an account is extremely easy',
-    description: 'Get everything set up and ready in under 10 minutes. All you need to do  is add your information and you are ready to go. ',
-    buttonLabel: 'Start Now',
-    imgStart: false,
-    img: 'images/svg-3.svg',
-    alt: 'Paper',
+    img: 'images/mail.svg',
+    alt: 'mail',
     dark: false,
     primary: false,
     darkText: true
